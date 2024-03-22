@@ -22,7 +22,7 @@ const Register = () => {
                             <div className="flex justify-evenly gap-5">
 
                                 <label className="form-control w-full max-w-xs">
-                                    <div className="label">
+                                    <div className="label !justify-center">
                                         <span className={`label-text`}>First Name</span>
                                     </div>
                                     <input
@@ -33,8 +33,8 @@ const Register = () => {
                                 </label>
 
                                 <label className="form-control w-full max-w-xs">
-                                    <div className="label">
-                                        <span className={`label-text `}>Last Name</span>
+                                    <div className="label !justify-center">
+                                        <span className={`label-text`}>Last Name</span>
                                     </div>
                                     <input
                                         type="text"
@@ -43,16 +43,7 @@ const Register = () => {
                                     />
                                 </label>
                             </div>
-                        </form><label className="form-control w-full max-w-xs">
-                            <div className="label">
-                                <span className={`label-text `}>First Name</span>
-                            </div>
-                            <input
-                                type="text"
-                                placeholder="Type here"
-                                className="input input-bordered w-full max-w-xs"
-                            />
-                        </label>
+                        </form>
                     </div>
                 </div>
             </div>

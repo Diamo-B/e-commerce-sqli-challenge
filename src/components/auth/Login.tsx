@@ -12,7 +12,7 @@ const Login = () => {
 
   return (
     <div className="h-dvh flex flex-col justify-center items-center bg-base-300">
-      <h1 className="mb-10 text-4xl berkshire-swash-regular capitalize">E-commerce khorafiya</h1>
+      <h1 className="mb-10 text-4xl capitalize font-bold">E-commerce khorafiya</h1>
       <div className="w-2/3 2xl:w-1/2 flex border rounded-2xl bg-base-100">
         <div className="w-1/2 flex items-center">
           <img src="pngwing.com.png" alt="" className="max-h-96 mx-auto" />
@@ -27,7 +27,7 @@ const Login = () => {
                 <input
                   type="text"
                   placeholder="Type here"
-                  className="input input-bordered w-full max-w-xs"
+                  className="input input-bordered w-full max-w-xs placeholder:text-sm"
                   {...register("email")}
                 />
               </label>
@@ -38,18 +38,18 @@ const Login = () => {
                 <input
                   type="password"
                   placeholder="Type here"
-                  className="input input-bordered w-full max-w-xs"
+                  className="input input-bordered w-full max-w-xs placeholder:text-sm"
                   {...register("password")}
                 />
               </label>
-              <a href="" className="my-2 capitalize hover:underline ml-auto">forgot password?</a>
+              <a href="" className="my-2 capitalize hover:underline ml-auto text-sm">forgot password?</a>
               <div className="w-full mt-2">
                 <button className="btn btn-primary btn-wide !rounded-full btn-outline">Log In</button>
               </div>
             </form>
             <div className="divider">Or</div>
             <div className="w-full">
-              <a href="" className="btn btn-secondary btn-wide !rounded-full btn-outline">Create a new account</a>
+              <a href="" className="btn btn-secondary btn-wide !rounded-full btn-outline montserrat font-bold">Create a new account</a>
             </div>
           </div>
         </div>

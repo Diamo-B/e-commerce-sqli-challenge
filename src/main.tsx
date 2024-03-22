@@ -5,13 +5,16 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Login from './components/auth/Login';
 import Register from './components/auth/Register';
+import Login1 from './components/auth/Login1';
+import { Provider } from 'react-redux';
+import { store } from './stores/gen.store';
+import GenLayout from './components/Layout/genLayout';
 
 const router = createBrowserRouter([
 {
   path: "/login",
-  element: <Login/>,
+  element: <GenLayout><Login1/></GenLayout>,
   
 },
 {
@@ -21,6 +24,8 @@ const router = createBrowserRouter([
 ]);
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>,
 )
