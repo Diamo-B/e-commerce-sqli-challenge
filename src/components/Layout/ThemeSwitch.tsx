@@ -11,7 +11,7 @@ const ThemeSwitch = () => {
 
       {/* sun icon */}
       <svg
-        className="swap-on fill-current size-7"
+        className="swap-on fill-current size-6"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
       >
@@ -20,7 +20,7 @@ const ThemeSwitch = () => {
 
       {/* moon icon */}
       <svg
-        className="swap-off fill-current size-7"
+        className="swap-off fill-current size-6"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
       >

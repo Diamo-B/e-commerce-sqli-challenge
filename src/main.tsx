@@ -6,7 +6,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Register from './components/auth/Register';
-import Login1 from './components/auth/Login1';
+import Login1 from './components/auth/Login';
 import { Provider } from 'react-redux';
 import { store } from './stores/gen.store';
 import GenLayout from './components/Layout/genLayout';
